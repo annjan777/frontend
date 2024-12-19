@@ -1,0 +1,76 @@
+/* src/components/Login.css */
+
+/* Container to center login form */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 100vh; /* Full height for vertical centering */
+}
+
+/* Form and input styling */
+.login-form {
+  width: 100%;
+  max-width: 400px; /* Limit the max width */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+}
+
+/* Input fields */
+.login input {
+  width: 100%; /* Full width of the container */
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin: 2.5%; /* Space between inputs */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  width: 100%; /* Make button full width */
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .login-form {
+    width: 90%; /* Allow the form to use 90% of the screen width */
+    padding: 15px;
+  }
+
+  .login input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
